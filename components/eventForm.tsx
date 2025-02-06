@@ -144,7 +144,7 @@ export function EventForm({ onClose, onSubmit }: EventFormProps) {
             type="submit"
             className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
           >
-            Ajouter l'événement
+            {"Ajouter l'événement"}
           </button>
         </form>
       </div>

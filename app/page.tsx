@@ -11,9 +11,9 @@ export default function Home() {
               Agenda annuel du Campus ICC Bruxelles
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Restez informé et impliqué dans la vie de notre campus ! Retrouvez
-              les dates clés de toutes les célébrations, réunions et activités
-              programmées tout au long de l'année.
+              {
+                "Restez informé et impliqué dans la vie de notre campus ! Retrouvez les dates clés de toutes les célébrations, réunions et activités programmées tout au long de l'année."
+              }
             </p>
             <div className="flex space-x-4">
               <Link
@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1635859890085-ec8cb5466806"
               alt="Church Calendar with Events"
               className="w-full max-w-md rounded-lg shadow-lg"
