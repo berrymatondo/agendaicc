@@ -22,4 +22,4 @@ export interface CalendarEvent {
 
 export type EventsByDate = Record<string, CalendarEvent[]>;
 
-export type CalendarView = "semaine" | "mois" | "semestre" | "annee";
+export type CalendarView = "week" | "month" | "semester" | "year";
