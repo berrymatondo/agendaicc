@@ -33,10 +33,10 @@ const events = [
   },
   {
     id: 3,
-    title: "Retraite spirituelle",
+    title: "Retraite des hommes",
     time: "09:00-17:00",
     date: new Date(2024, 4, 28),
-    description: "Retraite spirituelle annuelle",
+    description: "Retraite des hommes",
     color: "bg-purple-500",
     category: "Retraite",
   },

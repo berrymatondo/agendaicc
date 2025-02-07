@@ -79,13 +79,13 @@ export default function EventsCalendar() {
   const displayEvents = showAllEvents ? yearEvents : selectedDateEvents;
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4">
-      <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-6">
-        <div>
+    <div className="min-h-screen bg-gray-50 md:p-4">
+      <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-6">
+        <div className="md:col-span-2 ">
           <h1 className="text-2xl font-bold text-gray-800 mb-6">
             Agenda annuel ICC Bruxelles
           </h1>
-          <div className="mb-4 flex justify-between items-center">
+          <div className=" mb-4 flex justify-between items-center">
             <div>
               <Button
                 variant={calendarView === "week" ? "default" : "outline"}
@@ -133,7 +133,7 @@ export default function EventsCalendar() {
             yearEvents={yearEvents}
           />
         </div>
-        <div className="relative mt-8">
+        <div className=" md:col-span-1 relative mt-8">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-2xl font-bold text-gray-800">
               {showAllEvents ? "All Events This Year" : "Events"}
