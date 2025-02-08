@@ -47,7 +47,7 @@ export function AddEventForm({
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg p-6 w-full max-w-md">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold">Add New Event</h2>
+          <h2 className="text-2xl font-bold">Nouvel événement</h2>
           <Button variant="ghost" size="icon" onClick={onClose}>
             <X className="h-6 w-6" />
           </Button>
@@ -58,7 +58,7 @@ export function AddEventForm({
               htmlFor="title"
               className="block text-sm font-medium text-gray-700"
             >
-              Title
+              Titre
             </label>
             <Input
               id="title"
@@ -87,7 +87,7 @@ export function AddEventForm({
               htmlFor="time"
               className="block text-sm font-medium text-gray-700"
             >
-              Time
+              Heures
             </label>
             <Input
               id="time"
@@ -115,7 +115,7 @@ export function AddEventForm({
               htmlFor="location"
               className="block text-sm font-medium text-gray-700"
             >
-              Location
+              Lieu
             </label>
             <Input
               id="location"
@@ -124,7 +124,7 @@ export function AddEventForm({
             />
           </div>
           <Button type="submit" className="w-full">
-            Add Event
+            Ajouter un événement
           </Button>
         </form>
       </div>

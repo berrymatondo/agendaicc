@@ -26,7 +26,7 @@ export default function Navigation({
           >
             <div className="flex flex-col items-center justify-end text-xs">
               <Home className="h-6 w-6" />
-              Accuiel
+              Accueil
             </div>
           </Button>
         </Link>
@@ -63,8 +63,8 @@ export default function Navigation({
         </Link>
 
         <Button variant="ghost" size="icon">
-          <div className="flex flex-col items-center justify-end text-xs">
-            <User className="h-6 w-6" />
+          <div className="text-sky-700 flex flex-col items-center justify-end text-xs">
+            <User className="h-6 w-6 " />
             Connexion
           </div>
         </Button>

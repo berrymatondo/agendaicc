@@ -44,13 +44,15 @@ export default function Home() {
 
             <p className="md:hidden text-center mb-4">ICC Bruxelles</p>
             <div className="relative">
-              <Image
-                src={home}
-                alt="Church Calendar with Events"
-                className="w-full max-w-md rounded-lg shadow-lg"
-                width={400}
-                height={600}
-              />
+              <div className="rounded-lg max-md:max-h-48 overflow-hidden">
+                <Image
+                  src={home}
+                  alt="Church Calendar with Events"
+                  className="w-full max-w-md rounded-lg shadow-lg"
+                  width={400}
+                  height={400}
+                />
+              </div>
 
               <div className="m-8 z-50 absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2">
                 <Image

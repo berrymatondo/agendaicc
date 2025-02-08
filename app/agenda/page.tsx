@@ -14,6 +14,7 @@ import { EventCard } from "@/components/event-card";
 import { EventModal } from "@/components/event-modal";
 import { AddEventForm } from "@/components/add-event-form";
 import PageLayout from "@/components/pageLayout";
+import { Badge } from "@/components/ui/badge";
 
 export default function EventsCalendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -88,38 +89,38 @@ export default function EventsCalendar() {
       <div className="min-h-screen bg-gray-50 md:p-4">
         <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-6">
           <div className="md:col-span-2 ">
-            <h1 className="text-2xl font-bold text-gray-800 mb-6">
+            {/*            <h1 className="text-2xl font-bold text-gray-800 mb-6">
               Agenda annuel ICC Bruxelles
-            </h1>
+            </h1> */}
             <div className=" mb-4 flex justify-between items-center">
               <div>
-                <Button
+                <Badge
                   variant={calendarView === "week" ? "default" : "outline"}
                   onClick={() => setCalendarView("week")}
                   className="mr-2"
                 >
                   Semaine
-                </Button>
-                <Button
+                </Badge>
+                <Badge
                   variant={calendarView === "month" ? "default" : "outline"}
                   onClick={() => setCalendarView("month")}
                   className="mr-2"
                 >
                   Mois
-                </Button>
-                <Button
+                </Badge>
+                {/*                 <Button
                   variant={calendarView === "semester" ? "default" : "outline"}
                   onClick={() => setCalendarView("semester")}
                   className="mr-2"
                 >
                   Semestre
-                </Button>
-                <Button
+                </Button> */}
+                <Badge
                   variant={calendarView === "year" ? "default" : "outline"}
                   onClick={() => setCalendarView("year")}
                 >
                   {"Année"}
-                </Button>
+                </Badge>
               </div>
               <Button
                 variant="outline"
@@ -139,17 +140,26 @@ export default function EventsCalendar() {
               yearEvents={yearEvents}
             />
           </div>
-          <div className=" md:col-span-1 relative mt-8">
+          <div className="  md:col-span-1 relative mt-8">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-2xl font-bold text-gray-800">
-                {showAllEvents ? "All Events This Year" : "Events"}
+                {showAllEvents
+                  ? "Tous les événements de l'année"
+                  : "Evénements"}
               </h2>
               <Button
                 variant="ghost"
                 className="text-gray-500"
                 onClick={() => setShowAllEvents(!showAllEvents)}
               >
-                {showAllEvents ? "Hide All" : "View All"}
+                {showAllEvents ? "Cacher" : "Tout voir"}
+              </Button>
+              <Button
+                size="icon"
+                className="h-14 w-14 rounded-full  shadow-lg"
+                onClick={() => setShowAddEventForm(true)}
+              >
+                <Plus className="h-6 w-6" />
               </Button>
             </div>
 
@@ -162,18 +172,18 @@ export default function EventsCalendar() {
             ) : (
               <p className="text-center text-gray-500 py-4">
                 {showAllEvents
-                  ? "No events for this year"
-                  : "No events for this date"}
+                  ? "Aucun énément cette année"
+                  : "Aucun événement à cette date"}
               </p>
             )}
 
-            <Button
+            {/*             <Button
               size="icon"
-              className="h-14 w-14 rounded-full fixed bottom-6 right-6 shadow-lg"
+              className="h-14 w-14 rounded-full absolute top-0 right-6 shadow-lg"
               onClick={() => setShowAddEventForm(true)}
             >
               <Plus className="h-6 w-6" />
-            </Button>
+            </Button> */}
           </div>
         </div>
 

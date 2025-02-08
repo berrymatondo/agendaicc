@@ -48,11 +48,11 @@ export function EventModal({
             <strong>Date:</strong> {event.date.toLocaleDateString()}
           </p>
           <p>
-            <strong>Time:</strong> {event.time}
+            <strong>Heures:</strong> {event.time}
           </p>
           {event.location && (
             <p>
-              <strong>Location:</strong> {event.location}
+              <strong>Lieu:</strong> {event.location}
             </p>
           )}
           {event.description && (

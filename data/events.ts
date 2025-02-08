@@ -4,7 +4,7 @@ export const EVENTS: Event[] = [
   {
     id: "1",
     title: "Attend AGM Meeting",
-    date: new Date(2025, 1, 7),
+    date: new Date(2025, 1, 5),
     color: "#2196F3",
     time: "02:00",
     progress: 30,
